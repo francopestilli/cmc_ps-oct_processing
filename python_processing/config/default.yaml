@@ -1,0 +1,53 @@
+io:
+  raw_extension: .dat
+  dtype: int16
+  byte_order: little
+  header_bytes: 0
+  shape: null
+  spectral_axis: -1
+  background_strategy: mean_along_bscan
+  channels:
+    n_channels: 2
+    names: [co_pol, cross_pol]
+    layout: axis
+    channel_axis: 0
+    canonical_axis_order: czyx
+    channels:
+      - name: co_pol
+        index: 0
+        role: co-polarized detector
+        gain: 1.0
+      - name: cross_pol
+        index: 1
+        role: cross-polarized detector
+        gain: 1.0
+reconstruction:
+  fft_size: null
+  window: hann
+  crop_depth: null
+  subtract_dc: true
+  dispersion_coefficients: [0.0, 0.0, 0.0]
+  k_linearization: null
+  reconstruct_per_channel: true
+contrasts:
+  reflectivity_log_db: true
+  eps: 1.0e-12
+  co_pol_channel: co_pol
+  cross_pol_channel: cross_pol
+enface:
+  method: mean
+  depth_range: null
+stitching:
+  overlap_fraction: 0.15
+  blending: linear
+  tile_grid: null
+export:
+  save_tiff: true
+  save_zarr: true
+  save_hdf5: false
+  save_intermediates: false
+  zarr_chunks: auto
+provenance:
+  save_manifest: true
+  hash_inputs: false
+  log_level: INFO

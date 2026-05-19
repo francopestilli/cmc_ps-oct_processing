@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psoct-processing"
+version = "0.1.4"
+description = "Python re-implementation scaffold for PS-OCT processing workflows with validation harness and engineering hardening."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "GPL-3.0-or-later"}
+authors = [{name = "Center for Mesoscale Connectivity"}]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "tifffile>=2023.7.10",
+  "pyyaml>=6.0",
+  "pydantic>=2.0",
+  "typer>=0.9",
+  "rich>=13.0",
+  "zarr>=2.16",
+  "h5py>=3.9"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-benchmark>=4.0", "ruff>=0.4", "mypy>=1.0"]
+performance = ["numba>=0.58", "dask[array]>=2024.1", "pyfftw>=0.13"]
+
+[project.scripts]
+psoct-process = "psoct_processing.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["psoct_processing*"]
+
+[tool.ruff]
+line-length = 100
