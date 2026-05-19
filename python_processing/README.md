@@ -67,7 +67,7 @@ These optional dependencies are not required for the first runs.
 ## 3. Repository layout
 
 ```text
-psoct_pkg_v014/
+python_processing/
 ├── README.md
 ├── pyproject.toml
 ├── config/
@@ -565,7 +565,7 @@ Current status:
 
 The project is ready for the first small real-data validation cycle.
 
-## Notebook tutorial
+## A Notebook tutorial
 
 A Jupyter notebook tutorial is provided at:
 
