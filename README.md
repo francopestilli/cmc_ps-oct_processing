@@ -190,27 +190,9 @@ Supported or planned output formats include TIFF, JPEG, NumPy arrays, HDF5, and 
 
 Planned extensions include OME-Zarr, Neuroglancer-compatible multiscale pyramids, and napari-compatible visualization outputs.
 
-## Validation Strategy
-
-The migration strategy follows three phases. First, the architecture is modernized and modularized. Second, the Python implementation is validated against real PS-OCT acquisition data and MATLAB outputs. Third, numerical equivalence is quantified and improved where necessary.
-
-This means that the Python implementation should be interpreted as a clean scientific re-implementation rather than a strict line-by-line translation of the MATLAB code.
-
-## Intended Use Cases
-
-This toolbox is intended for mesoscale neuroimaging, white matter architecture analysis, fiber orientation mapping, histological imaging workflows, large volumetric microscopy, scalable imaging infrastructure, and reproducible computational imaging pipelines.
-
-## Planned Features
-
-Future development priorities include full polarization validation, advanced retardance estimation, fiber orientation refinement, registration and alignment, GPU acceleration, distributed reconstruction, Dask-based chunked processing, cloud-native workflows, brainlife.io integration, Docker and Apptainer containers, napari integration, Neuroglancer export, and interactive mesoscale visualization.
-
-## Development Philosophy
-
-The MATLAB implementation remains the reference implementation until the Python implementation has been validated on real acquisition data. The Python implementation is intended to become a more maintainable and scalable processing framework suitable for modern computational environments, including workstations, institutional clusters, cloud infrastructure, and neuroinformatics platforms.
-
 ## Citation
 
-If you use this software in scientific work, please cite the relevant PS-OCT and mesoscale imaging publications associated with this repository. Additional citation information should be added as the Python implementation stabilizes.
+<>
 
 ## Contributing
 
@@ -222,4 +204,4 @@ See the repository license information.
 
 ## Acknowledgments
 
-Development of this framework is part of broader efforts in mesoscale neuroimaging, computational neuroscience, scalable neuroinformatics, open scientific infrastructure, and reproducible imaging science.
+GRANT
